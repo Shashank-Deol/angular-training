@@ -1,0 +1,34 @@
+<p [style.color]="myColor"> 
+  Start editing to see some magic happen :)
+</p>
+{{name}}
+<hello></hello>
+{{age}}
+
+<a [href]="myURL">Visit here.</a>
+<br>
+{{age}}
+<br>
+<input type ="text" [(ngModel)]="name"> 
+<br>
+
+<br>
+<h3 *ngIf="shouldDisplay" >
+  This is ng if directive.
+  </h3>
+  <p></p>
+  <button (click)="show()">Display</button>
+
+<div *ngFor="let list of myList">
+  <p>
+    {{list}}
+  </p>
+</div>
+
+<h1 align="Center">Websites :</h1>
+
+<div *ngFor="let list of cars">
+  {{list.name}}
+  <a [href]="list.website">Open Website.</a>
+</div>
+
